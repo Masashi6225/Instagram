@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  PostViewController.swift
 //  Instagram
 //
 //  Created by Masashi Motohashi on 2017/05/27.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class PostViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
