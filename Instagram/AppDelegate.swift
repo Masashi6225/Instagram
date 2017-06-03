@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
+        AdobeUXAuthManager.shared().setAuthenticationParametersWithClientID("ae6f8c2db1a94c889739160463a91951", withClientSecret: "2cdcc7ca-fbc8-4539-bdba-927c50d311af")
         return true
     }
 
