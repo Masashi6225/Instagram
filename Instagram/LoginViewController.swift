@@ -22,7 +22,7 @@ class LoginViewController: UIViewController {
             // HUDで処理中を表示
             SVProgressHUD.show()
             
-            FIRAuth.auth()?.signIn(withEmail: address, password: password) { user, error in
+            Auth.auth().signIn(withEmail: address, password: password) { user, error in
                 if let error = error {
                     print("DEBUG_PRINT: " + error.localizedDescription)
                     SVProgressHUD.showError(withStatus: "サインインに失敗しました。")
@@ -55,7 +55,7 @@ class LoginViewController: UIViewController {
             SVProgressHUD.show()
             
             // アドレスとパスワードでユーザー作成。ユーザー作成に成功すると、自動的にログインする
-            FIRAuth.auth()?.createUser(withEmail: address, password: password) { user, error in
+            Auth.auth().createUser(withEmail: address, password: password) { user, error in
                 if let error = error {
                     // エラーがあったら原因をprintして、returnすることで以降の処理を実行せずに処理を終了する
                     print("DEBUG_PRINT: " + error.localizedDescription)

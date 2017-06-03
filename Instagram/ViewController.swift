@@ -62,7 +62,6 @@ class ViewController: UIViewController {
             let imageViewController = self.storyboard?.instantiateViewController(withIdentifier: "ImageSelect")
             self.present(imageViewController!, animated: true, completion: nil)
         }, at: 1)
+        }
     }
-
 }
-
